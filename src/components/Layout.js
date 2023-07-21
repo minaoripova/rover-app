@@ -3,6 +3,8 @@ import { AppBar, ListItem, Toolbar, Typography } from "@mui/material";
 import { Link } from 'react-router-dom';
 
 export function Layout(){
+
+  console.log('env', process.env.REACT_APP_NASA_API_KEY)
     return (
         <>
           <AppBar position="relative">
