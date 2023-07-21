@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import { Layout } from "./components/Layout";
+import { Rovers } from "./components/Rovers";
 
 function App() {
+  const theme = createTheme();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route path="/" element={<Navigate to="/rovers" replace={true} />}/>
+              <Route path="rovers" element={<Rovers />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
     </div>
   );
 }
