@@ -1,9 +1,6 @@
 # My Awesome React App
 
-A simple and awesome React app showcasing Mars rovers.
-
-## Table of Contents
-
+A simple and awesome React app showcasing photos from multiple Mars rovers by date.
 
 ## Installation
 
@@ -17,7 +14,7 @@ To start the development server, run: `npm start`
 
 ## Features
 
-- View information about Mars rovers
+- View photos from Mars rovers
 
 ## Technologies Used
 
@@ -46,8 +43,8 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License
 
-This project is not licensed.
+This project is not licensed under anything.
 
 ## Contact
 
-For questions or feedback, you can reach me via my email, if you know it.
+For questions or feedback, you can reach me via email, if you know my email address.
