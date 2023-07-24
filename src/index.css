@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h2{font-weight: 600!important;}
+ul{
+  padding-inline-start: 0;
+}
+ul li{
+  list-style: none;
+  padding: 4px 0;
+}
+.link{color: #fff;}
+.link:visited{color: #fff;}
+.banner{
+  margin: 0 auto;
+}
+.note{
+  margin: 64px auto;
+  text-align: center;
+  width: 100%;
+}
+.date-picker{
+  max-width: 150px;
+  margin: 0 auto;
+  padding: 8px 4px;
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+}
+.date-picker-block{
+  margin-bottom: 32px;
+}
+.css-480o17-MuiGrid-root{
+  margin-top: 0;
+  width: 100%;
+  margin-left: 0;
+}
+@media (max-width:787px) {
+.banner{margin-left: 32px;}
+}

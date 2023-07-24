@@ -1,23 +1,16 @@
 import { Outlet } from "react-router-dom";
-import { AppBar, ListItem, Toolbar, Typography } from "@mui/material";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 import { Link } from 'react-router-dom';
+
 
 export function Layout(){
 
-  console.log('env', process.env.REACT_APP_NASA_API_KEY)
     return (
         <>
-          <AppBar position="relative">
+          <AppBar position="relative" style={{ background: '#000000' }}>
             <Toolbar>
-              <Typography variant="h6" color="inherit" noWrap>
-                Rover App
+              <Typography variant="h6" color="inherit" style={{ fontWeight: 800, textDecoration:'none' }} noWrap component={Link} to="/">Rovers App
               </Typography>
-    
-              <ul>
-                <li>
-                    <ListItem component={Link} to="/">Rovers</ListItem>
-                </li>
-              </ul>
             </Toolbar>
           </AppBar>
           <main>
